@@ -1,0 +1,18 @@
+
+package arreglos1;
+import java.util.Scanner;
+public class Arreglos1 {
+    public static void main(String[] args) {
+        int[] arreglo = new int[20];
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingresa los 20 valores para el arreglo:");
+        for (int i = 0; i < 20; i++) {
+            System.out.println("Valor " + (i+1));
+            arreglo[i] = leer.nextInt();
+        }
+        System.out.println("Los valores ingresados fueron los siguientes: ");
+        for (int i = 0; i < 20; i++) {
+            System.out.println("En la posicion numero " + (i+1) + " está " + arreglo[i]);
+        }
+    }}
+
