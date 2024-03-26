@@ -1,0 +1,26 @@
+
+package masacorporal;
+import java.util.Scanner;
+public class MasaCorporal {
+    public static void main(String[] args) {
+        Scanner leer = new Scanner(System.in);
+        System.out.print("Ingrese cuantos kg pesa: ");
+        double peso = leer.nextDouble();
+        System.out.print("Ingrese cuantos cm mide: ");
+        double altura = leer.nextDouble();
+        altura = altura/100;
+        double MasaC = calcularMasaC(peso, altura);
+        Resultado("su masa corporal es",MasaC);
+        
+    }
+    public static double calcularMasaC(double peso, double altura) {
+        return peso / (altura * altura);
+    }
+
+    public static void Resultado(String nombre, double IMC) {
+        System.out.println("Tu índice de masa corporal es " + IMC);
+    }
+}
+    
+    
+
