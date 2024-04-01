@@ -1,16 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- */
 
 package com.mycompany.ajedrez;
-
-/**
- *
- * @author Admin
- */
 public class AJEDREZ {
-
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+   public static void main(String[] args) {
+      
+        String [][] tablero = {
+           {"T","C","A","R","Q","A","C","T"},
+           {"P","P","P","P","P","P","P","P"},
+           {"_","_","_","_","_","_","_","_",},
+           {"_","_","_","_","_","_","_","_",},
+           {"_","_","_","_","_","_","_","_",},
+           {"_","_","_","_","_","_","_","_",}, 
+           {"P","P","P","P","P","P","P","P"},
+           {"T","C","A","R","Q","A","C","T"},
+       };
+        tableroaje(tablero);
     }
+     public static void tableroaje(String [][] tableroajedrez ) {
+        for (int i = 0; i < tableroajedrez.length; i ++){
+            for (int a = 0; a < tableroajedrez [i].length; a ++){
+                System.out.print(tableroajedrez [i] [a]+ " ");
+               
+        }
+         System.out.println();
+         
+            
+            
+        }
+     }
 }
