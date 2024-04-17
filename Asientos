@@ -1,0 +1,62 @@
+package asientos;
+import java.util.Scanner;
+public class ASIENTOS {
+    static int[][] asientos;
+    public static void inicioasientos(int filas, int asientosPorFila) {
+        asientos = new int[filas][asientosPorFila];
+        for (int i = 0; i < filas; i++) {
+            for (int j = 0; j < asientosPorFila; j++) {
+                asientos[i][j] = 0;
+            }
+        }
+    }
+    public static void mostrarAsientos() {
+        System.out.println("Estado actual de la sala de cine:");
+        for (int i = 0; i < asientos.length; i++) {
+            for (int j = 0; j < asientos[i].length; j++) {
+                if (asientos[i][j] == 0) {
+                    System.out.print("[ ] ");
+                } else {
+                    System.out.print("[X] ");
+                }
+            }
+            System.out.println();
+        }
+    }
+    public static void reservarAsiento(int fila, int asiento) {
+        if (fila < 1 || fila > asientos.length || asiento < 1 || asiento > asientos[0].length) {
+            System.out.println("Numero de fila o asiento inválido");
+            return;
+        }
+        if (asientos[fila - 1][asiento - 1] == 0) {
+            System.out.println("Asiento reservado con éxito");
+            asientos[fila - 1][asiento - 1] = 1;
+        } else {
+            System.out.println("este asiento ya está ocupado, seleccione otro.");
+        }
+    }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        inicioasientos(8, 8);
+        while (true) {
+            System.out.println("\nMenu:");
+            System.out.println("1. Mostrar asientos disponibles");
+            System.out.println("2. Reservar asiento");
+            System.out.print("Seleccione una opcion: ");
+            int opcion = scanner.nextInt();
+            switch (opcion) {
+                case 1:
+                    mostrarAsientos();
+                    break;
+                case 2:
+                    System.out.print("Ingrese el numero de fila: ");
+                    int fila = scanner.nextInt();
+                    System.out.print("Ingrese el numero de asiento: ");
+                    int asiento = scanner.nextInt();
+                    reservarAsiento(fila, asiento);
+                default:
+                    System.out.println("Opción invalida. Por favor, seleccione una opcion valida.");
+            }
+        }
+    }
+}
