@@ -1,0 +1,20 @@
+
+package electronico;
+Telefonojava 
+Tableta.java 
+Portatil,java
+Ejecutarelectronico.java
+public class Portatil extends Electronico
+String Procesador;
+
+public Portatil(String nombre, String marca, doule precio, String Procesador, doule MemoriaRAH)
+Super (nombre, marca, preciol;
+this.Procesador=Procesadot;
+this. MemoriaRAM=MemoriaRAM;
+public void Encender (Str ing Run
+System. out.printin ("Encender SI o NO");
+Run=leer.nextLine();
+Run == "SI")(
+Syatem.out.println ("Encendido");
+pelsef
+Syatem.out.println ("Apagado");
