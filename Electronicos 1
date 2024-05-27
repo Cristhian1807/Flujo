@@ -1,0 +1,16 @@
+
+package electronico:
+Tableta.java X 6 Portatil.java X G, Ejecutar electronico.java X
+public class Telefono extends Electronico
+double almacenamiento:
+String modelo:
+public Telefono (String nombre, String marca, double precio, dowle almacenamiento, String modelo)
+super (nombre, marca, preciol
+this.almacenaiento=almacenamiento;
+this.modelo=model9;
+public void hacerllamada(int numero)
+Syatem.out.printin ("Igrese el nuero al que quiere llanar"):
+numero=leer.nextInt();
+&ystem.@ut.printin ("Llamnado al numero" + numero)
+}
+}
