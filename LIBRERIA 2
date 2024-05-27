@@ -1,0 +1,48 @@
+PASO 2 VISTA 
+
+
+// BibliotecaVista.java
+import java.util.List;
+import java.util.Scanner;
+
+public class BibliotecaVista {
+    private Scanner scanner;
+
+    public BibliotecaVista() {
+        scanner = new Scanner(System.in);
+    }
+
+    public int obtenerOpcionMenuPrincipal() {
+        System.out.println("1. Agregar Libro");
+        System.out.println("2. Mostrar Libros");
+        System.out.println("3. Salir");
+        System.out.print("Elige una opción: ");
+        return scanner.nextInt();
+    }
+
+    public Libro obtenerDetallesLibro() {
+        System.out.print("Ingresa el título del libro: ");
+        String titulo = scanner.next();
+        System.out.print("Ingresa el autor del libro: ");
+        String autor = scanner.next();
+        System.out.print("Ingresa tu nombre: ");
+        String nombre = scanner.next();
+        System.out.print("Ingresa el año de publicación: ");
+        int año = scanner.nextInt();
+        return new Libro(titulo, autor, nombre, año);
+    }
+
+    public void mostrarLibros(List<Libro> libros) {
+        if (libros.isEmpty()) {
+            System.out.println("No hay libros en la biblioteca.");
+        } else {
+            for (Libro libro : libros) {
+                System.out.println(libro);
+            }
+        }
+    }
+
+    public void mostrarMensaje(String mensaje) {
+        System.out.println(mensaje);
+    }
+}
