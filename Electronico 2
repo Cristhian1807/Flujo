@@ -1,0 +1,50 @@
+package electronico;
+import java.util.Scanner:
+phlic class Electronico
+Fcanner leer- neu Scanner (System. in)
+publc Scanner getLeer ()
+return leer;
+public void setLeer (Scanner leer)
+this. leer = leer:
+10
+public String getHombre ()
+rēturn nombre;
+F
+puolic
+this.
+pwblic
+public
+this.
+public double getPrecio ()
+return precio;
+L
+-
+public
+thig.1
+31
+publig String nororet
+32
+public String marea,
+public double preeiot
+public
+thig,
+Chie.
+thie.)
+Galaxy S21+ 5G
+43
+void setHombre (String nombre)
+nomre
+horre;
+String getMarca ()
+return marca;
+void setHarca(štring matca)
+. marca
+marca
+void setprecio (double precio)
+preC1D
+prec1oi
+ELectronico (String nombre
+nombre-nonbre;
+.marcamracca
+prec1o-prec1ot
+String marca, double precio)
