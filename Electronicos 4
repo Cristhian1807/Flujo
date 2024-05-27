@@ -1,0 +1,9 @@
+package electronico;
+public class Portatil extends Electronico {
+
+String Procesador;
+double MemoriaRAM;
+public Portatil (String nombre, String marca, double porecio, String Procesador, double Procesador, double MemoriaRAM){
+
+this. Procesador = Procesador;
+this. MemoriaRAM = MemoriaRAM;
