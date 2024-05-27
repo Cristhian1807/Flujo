@@ -1,0 +1,23 @@
+package com.mycompany.calculadora;
+public class Operacion
+public double suma (double numero1, doule nuerozl
+double resultado = numero1 + nwaero2;
+System.out.printin ("El reaultado de la suaa es
+return resultado;
+resultado);
+public double resta (doule nwero1, doule nwaero2)
+double resultado
+nuero1 - nneroli
+System.out.println ("E1 resultado de la resta es " + resultado);
+return resultado;
+public double multiplicacion (double numero1, doule nuero2)
+double resultado = numerol * nuero2;
+System.out.printin ("El resultado de la multiplicacion es " + resultado);|
+return resultado;
+public double division (double nueroi, dowble numero2)(
+double resultado = nuerol / nuero2;
+it (numero1 == 0)(
+&ystem.out.println ("Error");
+telse
+System.ozt.println ("El resultado de la division es " + resultado);
+return resultado;
